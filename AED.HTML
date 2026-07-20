@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AED 사용 설명서 · 당신의 친절한 이웃</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6.3 5.4 5.4 0 0 1 21.3 12C19 16.4 12 21 12 21Z" fill="#fff"/><path d="M8 12h2.2l1-2.4 1.6 4.4 1-2h2.2" stroke="#1F4A38" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    당신의 친절한 이웃
+  </a>
+  <nav>
+    <a href="index.html">서비스 소개</a>
+    <a href="demo.html">시연 (관제 데모)</a>
+    <a href="aed.html" class="on">AED 사용 설명서</a>
+  </nav>
+  <a class="nav-cta" href="demo.html">응급상황 시연 시작</a>
+</header>
+
+<section class="doc-hero">
+  <div class="container">
+    <span class="eyebrow light">친절한 이웃 교육 자료</span>
+    <h1>AED 사용 설명서</h1>
+    <p>전원만 켜면 기계가 음성으로 전부 안내합니다. 처음이어도 할 수 있습니다.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+
+    <div class="doc-card">
+      <h3> AED(자동심장충격기)란?</h3>
+      <p>심장이 갑자기 멈춘(심정지) 사람에게 전기 충격을 주어 심장 리듬을 되돌리는 기기입니다.
+      전원을 켜면 <b>음성으로 모든 단계를 안내</b>하므로 일반인도 사용할 수 있고,
+      충격이 필요 없는 사람에게는 작동하지 않도록 설계되어 안전합니다.
+      우리 마을에서는 응급상황 시 <b>드론이 환자 댁 대문 앞까지</b> AED를 배송합니다.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>반응 확인</h4>
+        <p>어깨를 두드리며 크게 불러봅니다. 반응과 정상 호흡이 없으면 심정지로 판단합니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>전원 켜기</h4>
+        <p>뚜껑을 열고 초록 전원 버튼을 누릅니다. 이후 음성 안내를 그대로 따릅니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>패드 부착</h4>
+        <p>패드 ① 오른쪽 빗장뼈 아래, 패드 ② 왼쪽 젖꼭지 옆 겨드랑이 아래에 그림대로 붙입니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>분석 대기</h4>
+        <p>"손을 떼세요" 안내가 나오면 아무도 환자에게 닿지 않게 물러납니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <h4>제세동</h4>
+        <p>"제세동이 필요합니다" 안내 시 "모두 물러나세요!" 외치고 깜빡이는 버튼을 누릅니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">6</div>
+        <h4>가슴압박</h4>
+        <p>깊이 5cm · 분당 100~120회로 구급대 도착까지 반복합니다. 2분마다 재분석됩니다.</p>
+      </div>
+    </div>
+
+    <div class="doc-card warn-card">
+      <h3> 꼭 기억하세요</h3>
+      <ul>
+        <li>물기가 있으면 가슴을 닦은 뒤 패드를 붙입니다.</li>
+        <li>패드와 심장박동기(가슴의 볼록한 부위), 파스는 겹치지 않게 합니다.</li>
+        <li>제세동 직후 지체 없이 가슴압박을 다시 시작합니다.</li>
+        <li>출동 알림을 받은 상황이라면 <b>119 신고는 이미 접수</b>되어 있습니다. 처치에만 집중하세요.</li>
+      </ul>
+    </div>
+
+    <div class="doc-card">
+      <h3>🎵 CPR 박자 연습 (110 BPM)</h3>
+      <p>가슴압박 속도 감각을 미리 익혀두세요. "아기상어" 박자와 같습니다.</p>
+      <div class="metronome" id="metro">
+        <div class="beat"></div>
+        <span>CPR 박자기 · 110 BPM</span>
+        <button id="metroBtn" type="button">시작</button>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <h3> 우리 마을 AED 위치</h3>
+      <ul>
+        <li>성남2리 마을회관 드론 스테이션 (상시 2대 · 드론 배송)</li>
+        <li>신림보건진료소 현관</li>
+        <li>성남교회 입구</li>
+      </ul>
+    </div>
+
+    <div class="center">
+      <a class="btn btn-alert btn-lg" href="demo.html">시연에서 단계별 안내 체험하기</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <b>당신의 친절한 이웃</b>
+      <p>강원도 고령층 응급상황 마을 대응 네트워크 · 해커톤 프로토타입</p>
+    </div>
+    <nav>
+      <a href="demo.html">시연</a>
+      <a href="index.html">서비스 소개</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/metronome.js"></script>
+</body>
+</html>

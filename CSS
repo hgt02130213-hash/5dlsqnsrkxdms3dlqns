@@ -408,10 +408,10 @@ section h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;margin-bottom:14px
 #realMap { width: 100%; height: 100%; background: #E9EFE6; }
 
 /* 지도 마커 공통 (절대 좌표 기반으로 1픽셀 오차 없이 완벽한 겹침 보장)
-   주의: position을 지정하지 않는다. Leaflet 기본 .leaflet-marker-icon(position:absolute)을
-   그대로 사용해야 iconAnchor(margin)가 좌표에 정확히 맞는다.
-   relative로 덮으면 margin-top(anchor 절반)만큼 마커가 아래로 밀려(드론 -25px≈14px) 출발점이 어긋난다. */
-.l-marker { }
+   position:absolute를 명시한다. 이는 Leaflet 기본 .leaflet-marker-icon 값과 동일하므로
+   iconAnchor(margin) 정렬이 그대로 유지되고(relative로 덮으면 anchor만큼 마커가 밀림),
+   동시에 자식 .l-marker-label(absolute)의 기준 조상이 되어 라벨이 마커에 정확히 붙는다. */
+.l-marker { position: absolute; }
 .l-marker-label { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 13.5px; font-weight: 800; font-family: inherit; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; z-index: 10; pointer-events: none; text-align: center; }
 .l-marker-label.bottom { top: 100%; margin-top: 6px; }
 .l-marker-label.top { bottom: 100%; margin-bottom: 6px; }
